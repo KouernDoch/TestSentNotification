@@ -25,4 +25,9 @@ public class PushNotificationController {
             return "Failed to send notification: " + e.getMessage();
         }
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "test";
+    }
 }
